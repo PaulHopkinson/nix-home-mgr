@@ -1,0 +1,41 @@
+# === Default SSH Options ===
+Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+    ForwardAgent no
+    IdentitiesOnly yes
+    ServerAliveInterval 60
+    ServerAliveCountMax 2
+
+# === Home Lab Servers ===
+Host dondarrion.tailscale
+    HostName 100.65.172.18
+    User paul
+    IdentityFile ~/.ssh/racknerd_key
+
+Host tarly.tailscale
+    HostName 100.97.126.72
+    User paul
+    IdentityFile ~/.ssh/racknerd_key
+
+# === VPS: Oracle ===
+Host oracle
+    HostName 1.2.3.4
+    User paul
+    IdentityFile ~/.ssh/oracle.key
+
+# === Infra domains ===
+Host *.h0p.in
+    User paul
+    IdentityFile ~/.ssh/racknerd_key
+
+Host *.113joy.com
+    User paul
+    IdentityFile ~/.ssh/racknerd_key
+
+# === GitHub ===
+Host github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa
+    IdentitiesOnly yes
+

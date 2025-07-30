@@ -1,0 +1,120 @@
+# =======================================
+#        Starship Prompt Configuration
+# =======================================
+
+# ----[ Theming: Change host color below on each device! ]----
+[hostname]
+format = "[$hostname]($style) "
+style = "bold yellow"           # ← ThinkPad color. Set e.g. "bold blue" on other machines.
+trim_at = "."
+ssh_only = false
+disabled = false
+
+# ----[ Main prompt format: all modules, then prompt character ]----
+format = """
+$all
+$character
+"""
+
+# =======================================
+#           User/Host Section
+# =======================================
+[username]
+format = "[$user]($style)@"
+style_user = "bold green"
+style_root = "bold red"
+disabled = false
+
+# =======================================
+#         Directory & Filesystem
+# =======================================
+[directory]
+format = "[$path]($style)[$read_only]($read_only_style) "
+style = "cyan"
+read_only = " "
+truncation_length = 3
+truncation_symbol = "…/"
+truncate_to_repo = false
+
+# =======================================
+#             Git Section
+# =======================================
+[git_branch]
+symbol = " "
+format = "[$symbol$branch]($style) "
+style = "bold purple"
+
+[git_status]
+format = "[$all_status$ahead_behind]($style) "
+style = "bold purple"
+
+# =======================================
+#        Language & Dev Environments
+# =======================================
+[nix_shell]
+symbol = "❄️ "
+format = "[$symbol$state]($style) "
+style = "blue bold"
+impure_msg = "impure"
+pure_msg = "pure"
+disabled = false
+
+[package]
+format = "via [📦 $version](208 bold) "
+disabled = false
+
+[python]
+symbol = "🐍 "
+format = "via [${symbol}${version}](green) "
+pyenv_version_name = true
+disabled = false
+
+[rust]
+symbol = "🦀 "
+format = "via [${symbol}${version}]($style) "
+style = "red bold"
+disabled = false
+
+[nodejs]
+symbol = " "
+format = "via [${symbol}${version}]($style) "
+style = "green bold"
+disabled = false
+
+[docker_context]
+symbol = "🐳 "
+format = "[$symbol$context]($style) "
+style = "blue bold"
+only_with_files = true
+disabled = false
+
+# =======================================
+#     Status: Battery, Time, Character
+# =======================================
+[battery]
+format = "[$symbol $percentage]($style) "
+full_symbol = "🔋"
+charging_symbol = "⚡"
+discharging_symbol = "🔌"
+disabled = false
+
+[time]
+format = "[ $time]($style) "
+time_format = "%H:%M"
+style = "dimmed white"
+disabled = false
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+vicmd_symbol = "[❮](bold blue)"
+
+# =======================================
+#       Disabled / Optional Modules
+# =======================================
+# [cmd_duration]
+# disabled = true
+
+# [memory_usage]
+# disabled = true
+

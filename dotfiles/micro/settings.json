@@ -1,0 +1,21 @@
+{
+  "colorscheme": "solarized-dark",
+  "autoindent": true,
+  "tabsize": 4,
+  "tabstospaces": true,
+  "softwrap": true,
+  "savecursor": true,
+  "ruler": true,
+  "statusline": true,
+  "filemanager": true,
+  "linter": true,
+  "fzf": true,
+  "autopairs": true,
+  "git": true,
+  "lsp": true,
+  "clipboard": true,
+  "comment": true,
+  "hlsearch": true,
+  "ignores": [".git", "node_modules", "target"]
+}
+

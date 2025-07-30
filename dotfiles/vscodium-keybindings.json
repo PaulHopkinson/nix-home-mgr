@@ -1,0 +1,15 @@
+[
+  {
+    "key": "ctrl+shift+t",
+    "command": "workbench.action.terminal.new"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "workbench.action.terminal.toggleTerminal"
+  }
+]
+
