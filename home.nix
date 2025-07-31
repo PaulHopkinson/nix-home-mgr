@@ -178,8 +178,10 @@
   #   Dotfiles, Scripts, Fonts
   # ================================
   home.file = {
-    ".config/VSCodium/User/keybindings.json".source = ./dotfiles/vscodium-keybindings.json;
-    ".config/VSCodium/User/settings.json".source = ./dotfiles/vscodium-settings.json;
+    # VSCodium settings: Use as a template only, not enforced by Home Manager.
+    # ".config/VSCodium/User/keybindings.json".source = ./dotfiles/vscodium-keybindings.json;
+    # ".config/VSCodium/User/settings.json".source = ./dotfiles/vscodium-settings.json;
+
     ".config/micro/settings.json".source = ./dotfiles/micro/settings.json;
     ".config/starship.toml".source = ./dotfiles/starship.toml;
     ".editorconfig".source = ./dotfiles/editorconfig;
