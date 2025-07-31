@@ -1,0 +1,24 @@
+# Nix
+/result
+*.drv
+.nix-channels
+.nix-defexpr
+.nix-profile
+.nix-store
+.cache/
+.local/
+*.swp
+*.swo
+*~
+# Editor/OS
+*.bak
+.DS_Store
+Thumbs.db
+# Log files
+*.log
+# Backup files
+*backup*
+# Secret/private
+private/
+# Node/Python/Rust (if you ever add any projects)
+node_modules

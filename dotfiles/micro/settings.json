@@ -13,7 +13,7 @@
   "autopairs": true,
   "git": true,
   "lsp": true,
-  "clipboard": true,
+  "clipboard": "external",
   "comment": true,
   "hlsearch": true,
   "ignores": [".git", "node_modules", "target"]

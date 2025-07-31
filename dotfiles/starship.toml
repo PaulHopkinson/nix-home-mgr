@@ -2,19 +2,18 @@
 #        Starship Prompt Configuration
 # =======================================
 
-# ----[ Theming: Change host color below on each device! ]----
-[hostname]
-format = "[$hostname]($style) "
-style = "bold yellow"           # ← ThinkPad color. Set e.g. "bold blue" on other machines.
-trim_at = "."
-ssh_only = false
-disabled = false
-
-# ----[ Main prompt format: all modules, then prompt character ]----
 format = """
 $all
 $character
 """
+
+# ----[ Theming: Change host color below on each device! ]----
+[hostname]
+format = "[$hostname]($style) "
+style = "bold yellow"
+trim_at = "."
+ssh_only = false
+disabled = false
 
 # =======================================
 #           User/Host Section
@@ -117,4 +116,3 @@ vicmd_symbol = "[❮](bold blue)"
 
 # [memory_usage]
 # disabled = true
-

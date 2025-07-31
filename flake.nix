@@ -20,7 +20,7 @@
       homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs { inherit system; };
         modules = [
-          ./home.nix,
+          ./home.nix
         ];
       };
     };
